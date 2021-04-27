@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indexedDB App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="database+76-131988545497319222.png">
+
+</head>
+<body>
+    <div class="page-landing">
+        <div class="mainpanel">
+            <div class="newdata-area">
+                <div class="input-area">
+                    <input type="text" class="name" id="name">
+                    <input type="text" class="email" id="email">
+                    <button id="insert">Insert</button>
+                </div> 
+                <div class="cable2"></div>
+                <div class="insert-area">
+                    <div class="log">
+                        <textarea id="insert-log" readonly></textarea>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="cable1"></div>
+            <div class="control-panel">
+                <div class="paneltitle">
+                    <div class="parafuso um"></div>
+                    <div class="parafuso dois"></div>
+                    <p>Database</p>
+                    <div class="parafuso tres"></div>
+                    <div class="parafuso quatro"></div>
+                </div>
+                <div class="status-message" id="logstatus">
+                </div>
+                <div class="log-panel">
+                    <textarea id="textarea" readonly></textarea>
+                </div>
+                <div class="buttons">
+                    <div class="loadDB-buttons">
+                        <button id="loadDB">Load DB</button>
+                        <button id="state"></button>
+                    </div>
+                    <div class="queryDB-buttons">
+                        <button id="queryDB">Query DB</button>
+                        <button id="state"></button>
+                    </div>
+                    <div class="clearDB-buttons">
+                        <button id="clearDB">Clear DB</button>
+                        <button id="state"></button>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        
+        
+        <div class="querypanel">
+            <div class="cable"></div>
+            <div class="queryarea">
+                <div class="query-results">
+                    <textarea id="querytextarea" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
